@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="222.0" prefWidth="525.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Main">
+	<children>
+      <Text layoutX="160.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Image URL Sequence PDFier" wrappingWidth="204.00000607967377">
+         <font>
+            <Font size="16.0" />
+         </font></Text>
+      <Label fx:id="status" alignment="CENTER" contentDisplay="CENTER" layoutX="8.0" layoutY="45.0" prefHeight="17.0" prefWidth="506.0" textAlignment="RIGHT" textFill="#ff0d0d" />
+      <TextField fx:id="prefix" layoutX="81.0" layoutY="74.0" prefHeight="25.0" prefWidth="364.0" promptText="Prefix URL (before the variable)" />
+      <TextField fx:id="suffix" layoutX="80.0" layoutY="111.0" prefHeight="25.0" prefWidth="364.0" promptText="Suffix URL (after the variable)" />
+      <TextField fx:id="firstPage" layoutX="81.0" layoutY="146.0" prefHeight="25.0" prefWidth="81.0" promptText="start pg no." />
+      <TextField fx:id="lastPage" layoutX="181.0" layoutY="146.0" prefHeight="25.0" prefWidth="81.0" promptText="total pages" />
+      <Button layoutX="236.0" layoutY="183.0" mnemonicParsing="false" onAction="#onSubmit" style="-fx-background-color: lightgreen;" text="Submit" />
+      <Button fx:id="outputFolder" layoutX="303.0" layoutY="146.0" mnemonicParsing="false" onAction="#selectDest" text="Select download folder" />
+   </children>
+</AnchorPane>

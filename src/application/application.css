@@ -1,0 +1,69 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+
+.tab-pane > .tab-header-area {
+  -fx-padding: 0;
+  }
+
+.tab-pane > .tab-header-area > .tab-header-background {
+  -fx-background-color: #E1E1E1, white;
+  -fx-background-insets: 0, 0 0 1px 0;
+}
+
+.tab-pane > .tab-header-area > .headers-region > .tab {
+  -fx-background-color:   #fee4d4;
+  -fx-background-insets: 0 0 1px 0;     
+  -fx-padding: 1.5em 1em;
+}
+
+.tab-pane > .tab-header-area > .headers-region > .tab >.tab-container >.tab-label {
+  -fx-text-fill: black;
+  -fx-font-size: 16px;
+  -fx-font-weight: bold;
+  }
+
+.tab-pane > .tab-header-area > .headers-region > .tab:selected {
+  -fx-background-color:  #fb966f, white;
+  -fx-background-insets: 0, 0 0 2px 0;
+  
+}
+
+.tab-pane > .tab-header-area > .headers-region > .tab:selected >.tab-container >.tab-label {
+  -fx-text-fill:  black;
+}
+
+.tab-pane > .tab-header-area > .headers-region > .tab:selected >.tab-container >.focus-indicator {
+  -fx-opacity: 0;
+}
+
+.tab-pane > .tab-header-area > .headers-region > .tab:hover{
+    -fx-scale-y: 1.05;
+    -fx-scale-x: 1.05;
+}
+
+.tab-pane > .tab-header-area > .headers-region > .tab:pressed:hover{
+	-fx-scale-y: 0.9;
+    -fx-scale-x: 0.9;
+}
+
+#print:pressed:hover, #excel:pressed:hover, .button:pressed:hover {
+    -fx-scale-y: 0.9;
+    -fx-scale-x: 0.9;
+}
+
+#print:hover, #excel:hover, .button:hover {
+    -fx-background-color: #383838;
+    -fx-scale-y: 1.05;
+    -fx-scale-x: 1.05;
+}
+
+
+.button {
+  -fx-background-radius: 10px;
+  -fx-border-radius: 10px;  
+}
+
+*{
+	-fx-text-fill : black;
+}
+
