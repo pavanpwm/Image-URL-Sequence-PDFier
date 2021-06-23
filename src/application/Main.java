@@ -88,7 +88,6 @@ public class Main extends Application implements Initializable{
 		int last = Integer.parseInt(lastPage.getText());
 		
 		if (!pre.isEmpty() && !firstPage.getText().isEmpty() && !lastPage.getText().isEmpty() && !dest.isEmpty()) {
-			System.out.println("downloading images");
 			status.setText("Please wait while images are being downloaded...");
 			for (int i = first; i <= last; i++) {
 				status.setText("Downloading " + i);
