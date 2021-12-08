@@ -43,7 +43,7 @@ public class Main extends Application implements Initializable{
     @FXML
     private Button outputFolder;
     
-    static String dest = "D:\\Users\\pavan BTD\\Desktop\\8th sem\\FON\\pdf\\";
+    static String dest = "D:\\pdf\\";
     static ArrayList<String> imagePaths = new ArrayList<String>();
     static ArrayList<Thread> activeThreadList = new ArrayList<Thread>();
 	
